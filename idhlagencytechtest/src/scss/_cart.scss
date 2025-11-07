@@ -50,11 +50,13 @@
     align-items: center;
     flex-shrink: 0;
 }
+
 .slide-cart__title {
     font-family: $font-family-primary;
     font-size: 1.2rem;
     font-weight: 700;
 }
+
 
 .slide-cart__close-btn {
     background: none;
@@ -74,7 +76,10 @@
 
 // --- slide cart footer ---
 .slide-cart__footer {
-
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    flex-shrink: 0;
+    text-align: center;
 }
 
 .slide-cart__subtotal {
@@ -84,10 +89,32 @@
     text-align: center;
 }
 
+.slide-cart__continue-btn {
+    background: none;
+    border: none;
+    color: #666;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 10px;
+    cursor: pointer;
+}
+
 // --- cart item ---
 .cart-item {
     display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
 }
+.cart-item__image {
+    width: 80px; 
+    height: 80px;
+    object-fit: cover;
+}
+
 .cart-item__details {
     flex-grow: 1;
     text-align: left;
@@ -96,16 +123,25 @@
 .cart-item__name {
     font-weight: 400;
     font-family: $font-family-secondary;
+    font-size: 0.95rem;
+    line-height: 1.2;
+    margin-bottom: 5px;
 }
 
 .cart-item__price {
     color: $color-brand-primary;
     font-weight: 700;
     font-size: 0.95rem;
+    display: block;
+    margin-bottom: 3px;
 }
 
 .cart-item__remove-btn {
     background: none;
     border: none;
     color: #999;
+    font-size: 0.8rem;
+    cursor: pointer;
+    padding: 0;
+    text-decoration: underline;
 }
