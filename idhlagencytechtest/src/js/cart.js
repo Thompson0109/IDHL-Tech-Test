@@ -22,4 +22,29 @@ document.addEventListener('DOMContentLoaded', () => {
         button.addEventListener('click', openCart);
     });
 
+    /**
+     * @function closeCart
+     * closes the slide-out cart and removes the overlay.
+     */
+    function closeCart() {
+        // remove 'is-open' modifier classes
+        cartElement.classList.remove('slide-cart--is-open');
+        overlayElement.classList.remove('cart-overlay--is-open');
+        
+        // restore body scrolling
+        document.body.style.overflow = '';
+    }
+    // close button inside the cart
+    closeCartButton.addEventListener('click', closeCart);
+    
+    // closing by clicking the transparent overlay
+    overlayElement.addEventListener('click', closeCart);
+
+    // closing by pressing the ESC key (Accessibility/UX)
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && cartElement.classList.contains('slide-cart--is-open')) {
+            closeCart();
+        }
+    });
+    
 });
