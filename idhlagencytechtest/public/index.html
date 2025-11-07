@@ -33,7 +33,31 @@
             </div>
         </section>
     </main>
+    <div class="cart-overlay"></div>
+    
+    <aside class="slide-cart">
+        <div class="slide-cart__header">
+            <h3 class="slide-cart__title">Your Bag</h3>
+            <button class="slide-cart__close-btn" aria-label="Close Cart">&times;</button>
+        </div>
 
-     <p> Title</p>
+        <div class="slide-cart__content">
+            <div class="cart-item">
+                <div class="cart-item__details">
+                    <p class="cart-item__name">Natures Menu Dog Food Can Chicken</p>
+                    <p class="cart-item__price">£22.81</p>
+                    <button class="cart-item__remove-btn">REMOVE X</button>
+                </div>
+            </div>
+            </div>
+
+        <div class="slide-cart__footer">
+            <p class="slide-cart__subtotal">Subtotal : £22.81</p>
+            <button class="button button--secondary">PROCEED TO CHECKOUT</button>
+            <button class="slide-cart__continue-btn">CONTINUE SHOPPING</button>
+        </div>
+    </aside>
+
+    <script src="js/cart.js"></script>
   </body>
 </html>

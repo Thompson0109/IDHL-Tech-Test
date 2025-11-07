@@ -1,0 +1,71 @@
+// --- slide-Out cart and overlay ---
+.cart-overlay {
+
+}
+
+.cart-overlay--is-open {
+
+}
+
+// --- slide cart component ---
+.slide-cart {
+
+}
+
+.slide-cart--is-open {
+
+}
+
+.slide-cart__header {
+
+}
+
+.slide-cart__title {
+
+}
+
+.slide-cart__close-btn {
+
+}
+
+.slide-cart__content {
+
+}
+
+// --- slide cart footer ---
+.slide-cart__footer {
+
+}
+
+.slide-cart__subtotal {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+// --- cart item ---
+.cart-item {
+    display: flex;
+}
+.cart-item__details {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.cart-item__name {
+    font-weight: 400;
+    font-family: $font-family-secondary;
+}
+
+.cart-item__price {
+    color: $color-brand-primary;
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+
+.cart-item__remove-btn {
+    background: none;
+    border: none;
+    color: #999;
+}
