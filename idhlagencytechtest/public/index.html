@@ -1,48 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
-    <title>Bark</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="src/css/layout.css">
-  </head>
-  <body>
+</head>
+<body>
+  <div id="root"></div>
 
-        <header class="header">
-        <div class="header__logo">B*RK</div>
-            <button class="header__cart-btn" aria-label="Open Cart">
+    <header class="header">
+        <div class="header__logo">BARK</div>
+        <button class="header__cart-btn js-add-to-cart" aria-label="Open Shopping Cart">
             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 2L3 6V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V6L18 2H6ZM6 4H18L19 6H5L6 4ZM5 8H19V20H5V8ZM10 12C10 13.1046 10.8954 14 12 14C13.1046 14 14 13.1046 14 12H10Z" fill="currentColor"/></svg>
-        </button>
         </button>
     </header>
 
-     <main class="page-layout">
-        <section class="page-layout__content-block">
+    <main class="page-layout">
+        <section class="page-layout__content-block content-block">
             <h1 class="content-block__title">Ornare Vulputate Elit</h1>
             <p class="content-block__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in.
             </p>
         </section>
 
-        <section class="page-layout__product-showcase">
+        <section class="page-layout__product-showcase product-showcase">
             <div class="product-card">
-                <div class="product-card__image-temp"></div>
+                <img src="" alt="Natures Menu Dog Food Can Chicken" class="product-card__image">
                 <h2 class="product-card__title">Natures Menu Dog Food Can Chicken</h2>
-                <p class="product-card__price">£22.81</p>  
-                <button class="button button--primary">Add To Cart</button>
+                <p class="product-card__price">£22.81</p>
+                
+                <button class="button button--primary js-add-to-cart">Add To Cart</button>
             </div>
         </section>
     </main>
-    <div class="cart-overlay"></div>
+
+    <div class="cart-overlay js-cart-overlay"></div>
     
-    <aside class="slide-cart">
+    <aside class="slide-cart js-slide-cart">
         <div class="slide-cart__header">
             <h3 class="slide-cart__title">Your Bag</h3>
-            <button class="slide-cart__close-btn" aria-label="Close Cart">&times;</button>
+            <button class="slide-cart__close-btn js-close-cart" aria-label="Close Shopping Cart">&times;</button>
         </div>
 
         <div class="slide-cart__content">
             <div class="cart-item">
+                <img src="" alt="Dog Food" class="cart-item__image">
                 <div class="cart-item__details">
                     <p class="cart-item__name">Natures Menu Dog Food Can Chicken</p>
                     <p class="cart-item__price">£22.81</p>
@@ -59,5 +60,5 @@
     </aside>
 
     <script src="js/cart.js"></script>
-  </body>
+</body>
 </html>

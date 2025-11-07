@@ -8,7 +8,7 @@
     background-color: rgba(0, 0, 0, 0.5); 
     z-index: 99;
     opacity: 0; 
-   // visibility: hidden;
+    visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
 
 }
@@ -41,20 +41,35 @@
 
 }
 
+// Cart Header
 .slide-cart__header {
-
+    padding: 15px 20px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
 }
-
 .slide-cart__title {
-
+    font-family: $font-family-primary;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
 .slide-cart__close-btn {
-
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #666;
 }
 
+// Cart Content (Scrollable Area)
 .slide-cart__content {
-
+    flex-grow: 1; 
+    padding: 20px;
+    overflow-y: auto; 
+    -webkit-overflow-scrolling: touch;
 }
 
 // --- slide cart footer ---
