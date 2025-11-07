@@ -30,15 +30,47 @@
     }
 }
 
+// --- page layout (mobile first: stacked) ---
 .page-layout {
-  display: grid; 
-  grid-template-columns: 1fr 1fr; 
-  width: 100%; 
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    flex-direction: column;
 }
 
-.page-layout__content-block, 
+.page-layout__content-block {
+    padding: 30px 20px;
+}
+
 .page-layout__product-showcase {
-  width: 50%; 
-  
-  flex: 1 1 50%; 
+    background-color: $color-background-product;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// --- desktop/tablet layout (side-by-side) ---
+@media (min-width: 768px) {
+    .header {
+        padding: 40px 80px;
+    }
+
+    .page-layout {
+        flex-direction: row; // two columns on desktop
+        min-height: 80vh; 
+    }
+
+    .page-layout__content-block {
+        flex: 1;
+        padding: 100px 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .page-layout__product-showcase {
+        flex: 1;
+        padding: 80px;
+    }
 }

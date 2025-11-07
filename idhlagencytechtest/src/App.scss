@@ -3,7 +3,17 @@
 @import 'scss/contentblock';
 @import 'scss/productcard';
 
-
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    /* TODO hide scrollbar when cart is open (desktop/tablet) */
+    overflow-x: hidden; 
+}
 /* reusable component: button */
 .button {
     padding: 10px 15px;
@@ -24,3 +34,22 @@
     background-color: #f8f8f8;
     border-bottom: 1px solid #eee;
 }
+
+@media (min-width: 768px) {
+    .header {
+        padding: 20px 50px;
+    }
+    
+    .product-section {
+        flex-direction: row; /* side by side on desktop */
+        justify-content: center;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .product-card {
+        flex: 1;
+        margin: 0;
+    }
+}
+
