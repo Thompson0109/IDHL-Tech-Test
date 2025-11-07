@@ -1,8 +1,15 @@
 .product-card {
     background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    text-align: center;
+
 }
 
 .product-card__image {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 10px;
 }
 
 .product-card__title {

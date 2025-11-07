@@ -29,3 +29,16 @@
         display: block;
     }
 }
+
+.page-layout {
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  width: 100%; 
+}
+
+.page-layout__content-block, 
+.page-layout__product-showcase {
+  width: 50%; 
+  
+  flex: 1 1 50%; 
+}
