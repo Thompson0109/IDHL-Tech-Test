@@ -12,7 +12,6 @@
 body {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
-    /* TODO hide scrollbar when cart is open (desktop/tablet) */
     overflow-x: hidden; 
 }
 /* reusable component: button */
@@ -37,6 +36,7 @@ body {
 }
 
 @media (min-width: 768px) {
+    //anything above 768px is most commonly desktop
     .header {
         padding: 20px 50px;
     }
